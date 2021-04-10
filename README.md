@@ -1,7 +1,3 @@
----
-title: "Untitled"
-output: html_document
----
 
 # visualizacion_piramide_poblacion
 Hace poco tuve la inquietud sobre de cómo generar una pirámide de población y claro que buscando en Google encontré varios ejemplos; todos muy parecidos pero que de alguna manera eran ejemplos a modo. Es decir, con tablas que ya tenían la información procesada y que muchas veces ya no estaban disponibles para su descarga por razones variadas.
@@ -29,9 +25,8 @@ grafica <- ggplot(df, aes(x = Age, y = Population, fill = Gender)) +
 
 plot(grafica)
 ```
- https://github.com/sanalexito/visualizacion_piramide_poblacion/blob/main/piramide01.jpeg
  
- ![piramide01](https://user-images.githubusercontent.com/65984679/114253465-f2459c80-996f-11eb-85b8-abca629029b2.jpeg)
+![piramide01](https://user-images.githubusercontent.com/65984679/114253465-f2459c80-996f-11eb-85b8-abca629029b2.jpeg)
 
  
 Eureka!!! Solo me hacía falta procesar la tabla que yo tenía para llegar al formato de arriba.
