@@ -19,15 +19,16 @@ df <- tibble::tibble(
 Esta tabla tiene un arreglo especial, que es el que se usa para generar la gráfica de pirámide, y cuyo código es el siguiente:
 
  ```{r setup,echo=T}
-grafica<-library(ggplot2)  
-ggplot(df, aes(x = Age, y = Population, fill = Gender)) +
-geom_bar(stat = "identity") +
-coord_flip() +
-theme_minimal() +
-labs(y = "Count", x = "Age Band", title = " ") +
-scale_fill_manual(values = c("pink", "blue"))
+library(ggplot2)  
+grafica <- ggplot(df, aes(x = Age, y = Population, fill = Gender)) +
+            geom_bar(stat = "identity") +
+            coord_flip() +
+            theme_minimal() +
+            labs(y = "Count", x = "Age Band", title = " ") +
+            scale_fill_manual(values = c("pink", "blue"))
 
 plot(grafica)
 ```
+ https://github.com/sanalexito/visualizacion_piramide_poblacion/blob/main/piramide01.jpeg
  
 Eureka!!! Solo me hacía falta procesar la tabla que yo tenía para llegar al formato de arriba.
