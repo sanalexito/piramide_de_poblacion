@@ -1,5 +1,5 @@
 
-# visualizacion_piramide_poblacion
+# visualizacion piramide poblacion
 Hace poco tuve la inquietud sobre de cómo generar una pirámide de población y claro que buscando en Google encontré varios ejemplos; todos muy parecidos pero que de alguna manera eran ejemplos a modo. Es decir, con tablas que ya tenían la información procesada y que muchas veces ya no estaban disponibles para su descarga por razones variadas.
 
 Para mi grata sorpresa encontre una página (https://community.rstudio.com/t/ggplot2-alter-scale-on-pyramid-plot/14934) en la que aparecen varias maneras de generar la pirámide. Y el el siguiente ejemplo:
