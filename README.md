@@ -23,12 +23,13 @@ df <- tibble(
 
  Esta tabla tiene un arreglo especial que es el que se usa para generar la gráfica que me interesaba y cuyo código es el siguiente:
  
+ ```{r}
  ggplot(df, aes(x = AgeBand, y = Population, fill = Gender)) +
   geom_bar(stat = "identity") +
   coord_flip() +
   theme_minimal() +
   labs(y = "Count", x = "Age Band", title = " ") +
-  scale_fill_manual(values = c("pink", "blue"))
+  scale_fill_manual(values = c("pink", "blue"))```
   
   
 
