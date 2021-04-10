@@ -12,11 +12,7 @@ df <- tibble(
   
 ```
 
- $\left[\overline{X} -z_{1-\frac{\alpha}{2}} \frac{\sigma}{\sqrt{n}}, \overline{X}+z_{1-\frac{\alpha}{2}}\frac{\sigma}{\sqrt{n}}
-\right]$
- 
-Esta tabla tiene un arreglo especial, que es el que se usa para generar la gráfica de pirámide, y cuyo código es el siguiente:  `\alpha`
-
+Esta tabla tiene un arreglo especial en el que los datos agrupados por grupo de edad aparecen como la union de dos dataframes. Este es el proceso que al tener una base de datos no siempre tendremos.
 **Population** | **Gender** | **AgeBand**|
 ---------------|------------|------------|
  5    |Male   |65-69  
@@ -30,6 +26,7 @@ Esta tabla tiene un arreglo especial, que es el que se usa para generar la gráf
   -39.6 |Female |80-84  
   -55.3 |Female |85+    
 
+El código para generar la gráfica de pirámide es el siguiente:  
 
  ```{r setup,echo=T}
 library(ggplot2)  
@@ -46,4 +43,6 @@ grafica
 ![piramide01](https://user-images.githubusercontent.com/65984679/114253465-f2459c80-996f-11eb-85b8-abca629029b2.jpeg)
 
  
-Eureka!!! Solo me hacía falta procesar la tabla que yo tenía para llegar al formato de arriba y es lo que pueden desacargar en los scripts.
+Eureka!!! 
+
+Si ocupan procesar una tabla sin datos agrupados como me hacía falta a mí, pueden desacargar los scripts.
