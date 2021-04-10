@@ -2,7 +2,7 @@
 # visualizacion_piramide_poblacion
 Hace poco tuve la inquietud sobre de cómo generar una pirámide de población y claro que buscando en Google encontré varios ejemplos; todos muy parecidos pero que de alguna manera eran ejemplos a modo. Es decir, con tablas que ya tenían la información procesada y que muchas veces ya no estaban disponibles para su descarga por razones variadas.
 
-Para mi grata sorpresa encontre una página (https://community.rstudio.com/t/ggplot2-alter-scale-on-pyramid-plot/14934) en la que se aparecen varias maneras de generar la pirámide. Y el el siguiente ejemplo:
+Para mi grata sorpresa encontre una página (https://community.rstudio.com/t/ggplot2-alter-scale-on-pyramid-plot/14934) en la que aparecen varias maneras de generar la pirámide. Y el el siguiente ejemplo:
 
  ```{r setup,echo=T}
 df <- tibble(
@@ -12,7 +12,7 @@ df <- tibble(
   
 ```
 
-Esta tabla tiene un arreglo especial en el que los datos agrupados por grupo de edad aparecen como la unión de dos dataframes: uno de hombres y otro para mujeres. Este es el proceso al que me refería arribita.
+Esta tabla tiene un arreglo especial en el que los datos agrupados por grupo de edad aparecen como la unión de dos dataframes: uno de hombres y otro para mujeres. Este es el proceso al que me refería arribita y que digamos ya esta armado.
 
 **Population** | **Gender** | **AgeBand**|
 ---------------|------------|------------|
@@ -27,7 +27,7 @@ Esta tabla tiene un arreglo especial en el que los datos agrupados por grupo de 
   -39.6 |Female |80-84  
   -55.3 |Female |85+    
 
-Y así, el código más simple para generar la gráfica de pirámide es el siguiente:  
+Y así, el código que se usa para generar la gráfica de pirámide es el siguiente:  
 
  ```{r setup,echo=T}
 library(ggplot2)  
@@ -46,7 +46,7 @@ grafica
  
 Eureka!!! 
 
-Sin embargo, la base que yo tenía es una base en bruto. Es decir, que no tiene la forma del ejemplo, por lo que tenía que llevar la información a la forma necesaria.
+Sin embargo, la base que yo tenía es una base en bruto. Es decir, que no tiene la forma del ejemplo (ve la imagen), por lo que tenía que llevar la información a la forma necesaria.
 ![image](https://user-images.githubusercontent.com/65984679/114256342-4b1c3180-997e-11eb-9d30-b04d0cad9459.png)
 
 Esto es algo que sí pude hacer sin instalar nada y es el código que les comparto en el script llamado "piramide.R"; en donde se usa una base de la Encuesta Nacional de Acceso a la Información y Protección de Datos (ENAID) publicada por el INEGI.
