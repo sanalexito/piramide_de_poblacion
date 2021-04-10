@@ -27,7 +27,7 @@ Esta tabla tiene un arreglo especial, que es el que se usa para generar la gráf
     *-16.1* |*Female* |*75-79*  |
     *-39.6* |*Female* |*80-84*  |
     *-55.3* |*Female* |*85+*    |
- 
+ ---------------|------------|------------|
  ```{r setup,echo=T}
 library(ggplot2)  
 grafica <- ggplot(df, aes(x = Age, y = Population, fill = Gender)) +
