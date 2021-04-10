@@ -32,7 +32,9 @@ df <- tibble(
   scale_fill_manual(values = c("pink", "blue"))
   ```
   
-  
+  ```{r pressure, echo=FALSE}
+plot(pressure)
+```
 
 
 Eureka!!! Solo me hacía falta procesar la tabla que yo tenía para llegar al formato de arriba.
