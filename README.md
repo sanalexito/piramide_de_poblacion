@@ -19,14 +19,10 @@ A & B
 1<2
 <p>
  ```
-\begin{array} {|r|r|r|r|}
-\hline
-Population & Gender & AgeBand \\
- \hline
- &  <dbl> & |<chr> &  |<chr>  \\
- \hline
-\end{array}
- 
+**Population** | **Gender** | **AgeBand**|
+---------------|------------|------------|
+ *<dbl>* | *<chr>* |*hr>*|
+
 ```
 
 |1   |     5     |Male   |65-69  |
