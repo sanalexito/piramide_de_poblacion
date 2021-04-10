@@ -12,24 +12,22 @@ df <- tibble(
   
 ```
 
-Esta tabla tiene un arreglo especial, que es el que se usa para generar la gráfica de pirámide, y cuyo código es el siguiente:  $$\alpha$$
-
+Esta tabla tiene un arreglo especial, que es el que se usa para generar la gráfica de pirámide, y cuyo código es el siguiente:  $\alpha$
 
 **Population** | **Gender** | **AgeBand**|
 ---------------|------------|------------|
- *<dbl>* | *<chr>* |*hr>*|
-
-
-|1   |     5     |Male   |65-69  |
- |2   |     8.7   |Male   |70-74  | 
- |3   |    16.7   |Male   |75-79  |
- |4   |    24.8   |Male   |80-84  |
- |5   |    38     |Male   |85+    |
- |6   |    -4.6   |Female |65-69  |
- |7   |    -6.4   |Female |70-74  |
- |8   |   -16.1   |Female |75-79  |
- |9   |   -39.6   |Female |80-84  |
- |10  |   -55.3   |Female |85+    |
+ *<dbl>* | *<chr>* |*<chr>*|
+     *5*    |*Male*   |*65-69*  |
+     *8.7*  |*Male*   |*70-74*  | 
+    *16.7*  |*Male*   |*75-79*  |
+    *24.8*  |*Male*   |*80-84*  |
+     *38*   |*Male*   |*85+ *   |
+    *-4.6*  |*Female* |*65-69*  |
+    *-6.4*  |*Female* |*70-74*  |
+    *-16.1* |*Female* |*75-79*  |
+    *-39.6* |*Female* |*80-84*  |
+    *-55.3* |*Female* |*85+*    |
+ 
  ```{r setup,echo=T}
 library(ggplot2)  
 grafica <- ggplot(df, aes(x = Age, y = Population, fill = Gender)) +
