@@ -23,7 +23,8 @@ df <- tibble(
  9      -39.6 Female 80-84
 10      -55.3 Female 85+  
  
- La tabla tiene un arreglo especial que es el que se usa para generar la gráfica que me interesaba y cuyo código es 
+ La tabla tiene un arreglo especial que es el que se usa para generar la gráfica que me interesaba y cuyo código es el siguiente:
+ 
  ggplot(df, aes(x = AgeBand, y = Population, fill = Gender)) +
   geom_bar(stat = "identity") +
   coord_flip() +
@@ -31,6 +32,7 @@ df <- tibble(
   labs(y = "Count", x = "Age Band", title = " ") +
   scale_fill_manual(values = c("pink", "blue"))
   
-  ![image](https://user-images.githubusercontent.com/65984679/114252154-78121980-9969-11eb-8496-0313c2213694.png)
+  
+
 
 Eureka!!! Solo me hacía falta procesar la tabla que yo tenía para llegar al formato de arriba.
