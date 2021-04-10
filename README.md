@@ -13,27 +13,20 @@ df <- tibble(
 ```
 
 Esta tabla tiene un arreglo especial, que es el que se usa para generar la gráfica de pirámide, y cuyo código es el siguiente:
- ```{r}
- | vv  v| v  | vv  |vv   | vv  |
-|---|---|---|---|---|
-|   |   |   |   |   |
-|   |   |   |   |   |
-|   |   |   |   |   |
-# A tibble: 10 x 3
-
-   |Population |Gender |AgeBand|
-   |-----------|-------|-------|
-   |     <dbl> |<chr>  |<chr>  |
- 1        5   Male   65-69  
- 2        8.7 Male   70-74  
- 3       16.7 Male   75-79  
- 4       24.8 Male   80-84  
- 5       38   Male   85+    
- 6       -4.6 Female 65-69  
- 7       -6.4 Female 70-74  
- 8      -16.1 Female 75-79  
- 9      -39.6 Female 80-84  
-10      -55.3 Female 85+ 
+ ```
+ |    |Population |Gender |AgeBand|
+ |----|-----------|-------|-------|
+ |    |     <dbl> |<chr>  |<chr>  |
+ |1   |     5     |Male   |65-69  |
+ |2   |     8.7   |Male   |70-74  | 
+ |3   |    16.7   |Male   |75-79  |
+ |4   |    24.8   |Male   |80-84  |
+ |5   |    38     |Male   |85+    |
+ |6   |    -4.6   |Female |65-69  |
+ |7   |    -6.4   |Female |70-74  |
+ |8   |   -16.1   |Female |75-79  |
+ |9   |   -39.6   |Female |80-84  |
+ |10  |   -55.3   |Female |85+    |
 ```
 
  ```{r setup,echo=T}
@@ -51,4 +44,4 @@ grafica
 ![piramide01](https://user-images.githubusercontent.com/65984679/114253465-f2459c80-996f-11eb-85b8-abca629029b2.jpeg)
 
  
-Eureka!!! Solo me hacía falta procesar la tabla que yo tenía para llegar al formato de arriba.
+Eureka!!! Solo me hacía falta procesar la tabla que yo tenía para llegar al formato de arriba y es lo que pueden desacargar en los scripts.
