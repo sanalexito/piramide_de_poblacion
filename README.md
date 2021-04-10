@@ -14,8 +14,8 @@ df <- tibble(
 
 Esta tabla tiene un arreglo especial, que es el que se usa para generar la gráfica de pirámide, y cuyo código es el siguiente:  $\alpha$
 
-|**Population** | **Gender** | **AgeBand**|
-|---------------|------------|------------|
+**Population** | **Gender** | **AgeBand**|
+---------------|------------|------------|
         *<dbl>* | *<chr>* |*<chr>*
  
 
