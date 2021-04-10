@@ -21,7 +21,7 @@ df <- tibble(
  8      -16.1 Female 75-79  
  9      -39.6 Female 80-
 
- La tabla tiene un arreglo especial que es el que se usa para generar la gráfica que me interesaba y cuyo código es el siguiente:
+ Esta tabla tiene un arreglo especial que es el que se usa para generar la gráfica que me interesaba y cuyo código es el siguiente:
  
  ggplot(df, aes(x = AgeBand, y = Population, fill = Gender)) +
   geom_bar(stat = "identity") +
