@@ -17,16 +17,9 @@ Esta tabla tiene un arreglo especial, que es el que se usa para generar la gráf
 **Population** | **Gender** | **AgeBand**|
 ---------------|------------|------------|
 *<dbl>* | *<chr>* |*<chr>*
- *5*    |*Male*   |*65-69*  
-     *8.7*  |*Male*   |*70-74*  
-    *16.7*  |*Male*   |*75-79*  
-    *24.8*  |*Male*   |*80-84*  
-     *38*   |*Male*   |*85+ *   
-    *-4.6*  |*Female* |*65-69*  
-    *-6.4*  |*Female* |*70-74*  
-    *-16.1* |*Female* |*75-79*  
-    *-39.6* |*Female* |*80-84*  
-    *-55.3* |*Female* |*85+*    
+ 5    |Male   |65-69  
+ 8.7  |Male   |70-74  
+   
 
 
  ```{r setup,echo=T}
