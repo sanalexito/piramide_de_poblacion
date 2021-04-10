@@ -11,7 +11,10 @@ df <- tibble(
  Age = c("65-69", "70-74", "75-79", "80-84", "85+", "65-69", "70-74", "75-79", "80-84", "85+"))
   
 ```
-
+```
+library(knitr)
+\alpha
+```
 Esta tabla tiene un arreglo especial, que es el que se usa para generar la gráfica de pirámide, y cuyo código es el siguiente:  `\alpha`
 
 **Population** | **Gender** | **AgeBand**|
