@@ -5,7 +5,7 @@ Hace poco tuve la inquietud sobre de cómo generar una pirámide de población y
 Para mi grata sorpresa encontre una página (https://community.rstudio.com/t/ggplot2-alter-scale-on-pyramid-plot/14934) en la que se muestra el siguiente ejemplo:
 
  ```{r setup,echo=T}
-df <- tibble::tibble(
+df <- tibble(
  Population = c(5, 8.7, 16.7, 24.8, 38, -4.6, -6.4, -16.1, -39.6, -55.3),
  Gender = c("Male", "Male", "Male", "Male", "Male", "Female", "Female", "Female", "Female", "Female"),
  Age = c("65-69", "70-74", "75-79", "80-84", "85+", "65-69", "70-74", "75-79", "80-84", "85+"))
@@ -16,8 +16,8 @@ Esta tabla tiene un arreglo especial, que es el que se usa para generar la gráf
  ```{r}
 # A tibble: 10 x 3
    |Population |Gender |AgeBand|
-  ------------------------------
-        <dbl> <chr>  <chr>  
+   |-----------|-------|-------|
+   |     <dbl> |<chr>  |<chr>  |
  1        5   Male   65-69  
  2        8.7 Male   70-74  
  3       16.7 Male   75-79  
