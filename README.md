@@ -14,6 +14,7 @@ df <- tibble::tibble(
  Gender = c("Male", "Male", "Male", "Male", "Male", "Female", "Female", "Female", "Female", "Female"),
  Age = c("65-69", "70-74", "75-79", "80-84", "85+", "65-69", "70-74", "75-79", "80-84", "85+"))
   
+ df
 ```
 Esta tabla tiene un arreglo especial que es el que se usa para generar la gráfica que me interesaba y cuyo código es el siguiente:
 
