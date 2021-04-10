@@ -12,7 +12,8 @@ df <- tibble(
   
 ```
 
- $$\frac{\sqrt{\lambda} }{n_i}$$
+ $\left[\overline{X} -z_{1-\frac{\alpha}{2}} \frac{\sigma}{\sqrt{n}}, \overline{X}+z_{1-\frac{\alpha}{2}}\frac{\sigma}{\sqrt{n}}
+\right]$
  
 Esta tabla tiene un arreglo especial, que es el que se usa para generar la gráfica de pirámide, y cuyo código es el siguiente:  `\alpha`
 
