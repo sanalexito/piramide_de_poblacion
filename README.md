@@ -12,7 +12,8 @@ df <- tibble(
   
 ```
 
-Esta tabla tiene un arreglo especial en el que los datos agrupados por grupo de edad aparecen como la union de dos dataframes. Este es el proceso que al tener una base de datos no siempre tendremos.
+Esta tabla tiene un arreglo especial en el que los datos agrupados por grupo de edad aparecen como la unión de dos dataframes: uno de hombre y otro para mujeres. Este es el proceso al que me refería arribita.
+
 **Population** | **Gender** | **AgeBand**|
 ---------------|------------|------------|
  5    |Male   |65-69  
@@ -26,7 +27,7 @@ Esta tabla tiene un arreglo especial en el que los datos agrupados por grupo de 
   -39.6 |Female |80-84  
   -55.3 |Female |85+    
 
-El código para generar la gráfica de pirámide es el siguiente:  
+Y así, el código para generar la gráfica de pirámide es el siguiente:  
 
  ```{r setup,echo=T}
 library(ggplot2)  
@@ -45,4 +46,5 @@ grafica
  
 Eureka!!! 
 
-Si ocupan procesar una tabla sin datos agrupados como me hacía falta a mí, pueden desacargar los scripts.
+Sin embargo, la base que yo tenía es una base en bruto. Es decir, que no tiene la forma que les mostré antes. Así, que les invito a revisar el script que llamo pirámide para que saber cómo procesar la base.
+
