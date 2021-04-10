@@ -9,6 +9,7 @@ df <- tibble::tibble(
  Age = c("65-69", "70-74", "75-79", "80-84", "85+", "65-69", "70-74", "75-79", "80-84", "85+"))
   
 df
+```
 
 library(ggplot2)  
 ggplot(df, aes(x = Age, y = Population, fill = Gender)) +
