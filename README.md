@@ -1,12 +1,3 @@
----
-title: "Untitled"
-output: html_document
----
-
-```{r setup, include=TRUE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
 
 # visualizacion_piramide_poblacion
 Hace poco tuve la inquietud sobre de cómo generar una pirámide de población y claro que buscando en Google encontré varios ejemplos; todos muy parecidos pero que de alguna manera eran ejemplos a modo. Es decir, con tablas que ya tenían la información procesada y que muchas veces ya no estaban disponibles para su descarga por razones variadas.
@@ -20,7 +11,9 @@ df <- tibble(
  Age = c("65-69", "70-74", "75-79", "80-84", "85+", "65-69", "70-74", "75-79", "80-84", "85+"))
   
 ```
- $\frac{\sqrt{\lambda} }{n_i}$, $\mbox{SO}_4^=$
+
+ $$\frac{\sqrt{\lambda} }{n_i}$$
+ 
 Esta tabla tiene un arreglo especial, que es el que se usa para generar la gráfica de pirámide, y cuyo código es el siguiente:  `\alpha`
 
 **Population** | **Gender** | **AgeBand**|
