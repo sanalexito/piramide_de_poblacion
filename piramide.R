@@ -58,6 +58,6 @@ ggplot(df, aes(x = Age, y = Population, fill = GENDER)) +
                      labels = paste0(as.character(c(seq(30, 0, -5), seq(5, 30, 5))), "m"))+
   coord_flip() +
   theme_minimal() +
-  labs(y = "Población", x = "Edad", title = " ") +
+  labs(y = "Población", x = "Edad", title = "Pirámide de población", caption="Fuente: ENAID 2016, INEGI. \nAgrupado por edades.") +
   scale_fill_manual(values = c("red", "blue"))
 
