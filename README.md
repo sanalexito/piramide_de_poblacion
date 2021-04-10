@@ -8,8 +8,8 @@ df <- tibble(
 +  Gender = c("Male", "Male", "Male", "Male", "Male", "Female", "Female", "Female", "Female", "Female"),
 +  Age = c("65-69", "70-74", "75-79", "80-84", "85+", "65-69", "70-74", "75-79", "80-84", "85+"))
 
-> dff
-# A tibble: 10 x 3
+#
+> df
    Population Gender Age  
         <dbl> <chr>  <chr>
  1        5   Male   65-69
@@ -32,7 +32,7 @@ df <- tibble(
   labs(y = "Count", x = "Age Band", title = " ") +
   scale_fill_manual(values = c("pink", "blue"))
   
-  
+  piramide01.jpeg
 
 
 Eureka!!! Solo me hacía falta procesar la tabla que yo tenía para llegar al formato de arriba.
