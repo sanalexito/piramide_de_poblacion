@@ -31,4 +31,7 @@ plot(grafica)
 ```
  https://github.com/sanalexito/visualizacion_piramide_poblacion/blob/main/piramide01.jpeg
  
+ ![piramide01](https://user-images.githubusercontent.com/65984679/114253465-f2459c80-996f-11eb-85b8-abca629029b2.jpeg)
+
+ 
 Eureka!!! Solo me hacía falta procesar la tabla que yo tenía para llegar al formato de arriba.
