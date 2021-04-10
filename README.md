@@ -29,7 +29,8 @@ df <- tibble(
   coord_flip() +
   theme_minimal() +
   labs(y = "Count", x = "Age Band", title = " ") +
-  scale_fill_manual(values = c("pink", "blue"))```
+  scale_fill_manual(values = c("pink", "blue"))
+  ```
   
   
 
