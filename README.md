@@ -49,7 +49,7 @@ Eureka!!!
 Sin embargo, la base que yo tenía es una base en bruto. Es decir, que no tiene la forma del ejemplo (ver la imagen), por lo que tenía que llevar la información a la forma necesaria.
 ![image](https://user-images.githubusercontent.com/65984679/114256342-4b1c3180-997e-11eb-9d30-b04d0cad9459.png)
 
-Esto es algo que sí pude hacer sin instalar nada y es el código que les comparto en el script llamado "piramide.R"; en donde se usa una base de la Encuesta Nacional de Acceso a la Información y Protección de Datos Personales (ENAID) 2016 publicada por el INEGI. Cheeequenlo :)
+Esto es algo que sí pude hacer sin instalar nada y es el código que les comparto en el script llamado "piramide.R"; en donde se usa una base de la Encuesta Nacional de Acceso a la Información y Protección de Datos Personales (ENAID) 2016 publicada por el INEGI. Cheeequenlo. Aclaro que se puede hacer el procesamiento de la info, aunque preferí hacerlo con código base a manera de ilustración.
 
 
 
